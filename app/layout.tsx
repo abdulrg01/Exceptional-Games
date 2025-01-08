@@ -1,14 +1,18 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import NavBar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Game | Online Gaming Platform',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum culpa. Cum numquam accusantium laboriosam dignissimos molestias! Sequi, ex nostrum!',
-  keywords: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum culpa.',
+  title: "Game | Online Gaming Platform",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum culpa. Cum numquam accusantium laboriosam dignissimos molestias! Sequi, ex nostrum!",
+  keywords:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum culpa.",
   // openGraph: {
   //   title: 'K5Win | Premium Online Gaming & Betting Platform',
   //   description: 'Experience the thrill of premium online gaming with K5Win.',
@@ -43,7 +47,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <NavBar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
