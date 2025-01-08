@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Card } from "./ui/card";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import Container from "./Container";
 
 const FeaturedSection = () => {
   const games = [
@@ -63,8 +64,8 @@ const FeaturedSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
+    <Container>
+      <section className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Featured Games</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -103,8 +104,8 @@ const FeaturedSection = () => {
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </Container>
   );
 };
 

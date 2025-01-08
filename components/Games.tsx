@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Container from "./Container";
 
 export default function Games() {
   const publishedGames = [
@@ -36,9 +37,8 @@ export default function Games() {
   ];
 
   return (
-    <div className="pb-16 pt-32 bg-background">
-      <div className="container mx-auto px-4">
-        {/* Publishing Section */}
+    <Container>
+      <section className="container mx-auto px-4">
         <section className="mb-16">
           <h1 className="text-4xl font-bold mb-8 text-center">
             Games We&apos;ve Published
@@ -117,7 +117,7 @@ export default function Games() {
             ))}
           </div>
         </section>
-      </div>
-    </div>
+      </section>
+    </Container>
   );
 }

@@ -1,10 +1,10 @@
+import Container from "./Container";
 import { Card } from "./ui/card";
 
 export default function About() {
   return (
-    <div className="pt-32 pb-16 bg-background">
-      <div className="container mx-auto px-4">
-        {/* Mission Statement */}
+    <Container>
+      <section className="container mx-auto px-4">
         <section className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-6">
             Our Mission: Empowering Indie Developers
@@ -17,7 +17,6 @@ export default function About() {
           </p>
         </section>
 
-        {/* What We Offer */}
         <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <Card className="p-6 hover:shadow-lg transition-shadow bg-card hover:bg-accent cursor-pointer">
             <h3 className="text-2xl font-bold mb-4">Resources</h3>
@@ -42,7 +41,6 @@ export default function About() {
           </Card>
         </section>
 
-        {/* Development Studio Integration */}
         <section className="bg-muted/50 p-8 rounded-lg shadow-lg mb-16">
           <h2 className="text-3xl font-bold text-center mb-6">
             Development Studio Integration
@@ -85,7 +83,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Core Values */}
         <section className="text-center">
           <h2 className="text-3xl font-bold mb-6">Our Core Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -111,7 +108,7 @@ export default function About() {
             </div>
           </div>
         </section>
-      </div>
-    </div>
+      </section>
+    </Container>
   );
 }

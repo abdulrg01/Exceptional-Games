@@ -1,10 +1,10 @@
-import Services from "@/components/Service";
+import Donation from "@/components/Donation";
 import React from "react";
 
 export default function page() {
   return (
     <>
-      <Services />
+      <Donation />
     </>
   );
 }
