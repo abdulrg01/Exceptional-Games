@@ -8,7 +8,6 @@ export default function Contact() {
       <section className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-12">Contact Us</h1>
 
-        {/* Contact Information */}
         <section className="mb-16 text-center">
           <p className="text-lg mb-4">
             Reach out to us via email, phone, or social media for any inquiries.

@@ -1,41 +1,8 @@
 import Image from "next/image";
 import Container from "./Container";
+import { inHouseGames, publishedGames } from "@/constant/page";
 
 export default function Games() {
-  const publishedGames = [
-    {
-      title: "Adventure Quest",
-      thumbnail: "/game3.avif",
-      description: "An epic journey through uncharted lands.",
-      trailer: "https://www.youtube.com/embed/dummy-trailer",
-      screenshots: ["/game3.avif", "/game3.avif"],
-      purchaseLink: "https://store.example.com/adventure-quest",
-      developer: "Indie Studio Alpha",
-    },
-    {
-      title: "Pixel Hero",
-      thumbnail: "/game1.avif",
-      description: "A pixel art platformer with unique mechanics.",
-      trailer: "https://www.youtube.com/embed/dummy-trailer2",
-      screenshots: ["/game3.avif", "/game3.avif"],
-      purchaseLink: "https://store.example.com/pixel-hero",
-      developer: "Indie Studio Beta",
-    },
-  ];
-
-  const inHouseGames = [
-    {
-      title: "Code Breakers",
-      thumbnail: "/game1.avif",
-      description: "A puzzle game to challenge your logic.",
-    },
-    {
-      title: "Space Odyssey",
-      thumbnail: "/game2.avif",
-      description: "Explore the universe in this sci-fi adventure.",
-    },
-  ];
-
   return (
     <Container>
       <section className="container mx-auto px-4">
@@ -93,7 +60,6 @@ export default function Games() {
           </div>
         </section>
 
-        {/* Studio Section */}
         <section>
           <h1 className="text-4xl font-bold mb-8 text-center">
             In-House Projects

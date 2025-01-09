@@ -9,8 +9,8 @@ export default function Home() {
       <main>
         <HomeHero />
         <FeaturedSection />
-        {/* <Promotions />
-        <ServiceDepartment /> */}
+        <Promotions />
+        <ServiceDepartment />
       </main>
     </div>
   );

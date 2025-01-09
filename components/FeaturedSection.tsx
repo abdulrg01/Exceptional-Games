@@ -4,65 +4,9 @@ import { Card } from "./ui/card";
 import { Star } from "lucide-react";
 import Image from "next/image";
 import Container from "./Container";
+import { games } from "@/constant/page";
 
 const FeaturedSection = () => {
-  const games = [
-    {
-      title: "Epic Adventure",
-      description:
-        "Embark on a thrilling journey through magical lands filled with challenges and treasures.",
-      image: "/laptop.jpg",
-      trailer: "https://www.youtube.com/embed/sample1",
-      rating: 4.8,
-      accolade: "Game of the Year - Space Game Awards 2023",
-    },
-    {
-      title: "Galactic Wars",
-      description:
-        "Fight in epic space battles and save the galaxy in this action-packed shooter.",
-      image: "/image-1.jpg",
-      trailer: "https://www.youtube.com/embed/sample2",
-      rating: 4.7,
-      accolade: "Best Action Game - Cyber Gaming Expo 2023",
-    },
-    {
-      title: "Puzzle Paradise",
-      description:
-        "Solve intricate puzzles and unlock the secrets of a mysterious island.",
-      image: "/hp.jpg",
-      trailer: "https://www.youtube.com/embed/sample3",
-      rating: 4.9,
-      accolade: "Most Immersive World - Fantasy Game Guild 2023",
-    },
-    {
-      title: "Epic Adventure",
-      description:
-        "Embark on a thrilling journey through magical lands filled with challenges and treasures.",
-      image: "/laptop.jpg",
-      trailer: "https://www.youtube.com/embed/sample1", // Replace with your trailer link
-      rating: 4.8,
-      accolade: "Game of the Year - Space Game Awards 2023",
-    },
-    {
-      title: "Galactic Wars",
-      description:
-        "Fight in epic space battles and save the galaxy in this action-packed shooter.",
-      image: "/image-1.jpg",
-      trailer: "https://www.youtube.com/embed/sample2",
-      rating: 4.7,
-      accolade: "Best Action Game - Cyber Gaming Expo 2023",
-    },
-    {
-      title: "Puzzle Paradise",
-      description:
-        "Solve intricate puzzles and unlock the secrets of a mysterious island.",
-      image: "/hp.jpg",
-      trailer: "https://www.youtube.com/embed/sample3",
-      rating: 4.8,
-      accolade: "Game of the Year - Space Game Awards 2023",
-    },
-  ];
-
   return (
     <Container>
       <section className="container mx-auto px-4">

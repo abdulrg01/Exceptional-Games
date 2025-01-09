@@ -1,40 +1,10 @@
 "use client";
 
+import { tiers } from "@/constant/page";
 import Container from "./Container";
 import { Card } from "./ui/card";
 
 export default function Donation() {
-  const tiers = [
-    {
-      title: "Bronze Tier",
-      amount: "$5",
-      description:
-        "Get a personalized thank-you email and social media shoutout.",
-      buttonText: "Donate $5",
-    },
-    {
-      title: "Silver Tier",
-      amount: "$20",
-      description:
-        "Includes all Bronze rewards, plus early access to our game trailers and updates.",
-      buttonText: "Donate $20",
-    },
-    {
-      title: "Gold Tier",
-      amount: "$50",
-      description:
-        "All Silver rewards, plus an exclusive digital wallpaper and in-game credit.",
-      buttonText: "Donate $50",
-    },
-    {
-      title: "Platinum Tier",
-      amount: "$100",
-      description:
-        "All Gold rewards, plus access to behind-the-scenes content and exclusive developer Q&A sessions.",
-      buttonText: "Donate $100",
-    },
-  ];
-
   return (
     <Container>
       <section className="container mx-auto px-4">

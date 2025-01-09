@@ -3,33 +3,15 @@ import { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import { slides } from "@/constant/page";
 
 export default function HomeHero() {
-  const slides = [
-    {
-      image: "/game1.avif",
-      title: "Bringing Exceptional Games to Players Worldwide",
-      subtitle:
-        "Focused on publishing innovative games while supporting development through our studio expertise.",
-    },
-    {
-      image: "/game3.avif",
-      title: "Coming Soon!",
-      subtitle: "Stay tuned for our next big release.",
-    },
-    {
-      image: "/game2.avif",
-      title: "Immersive Worlds Await",
-      subtitle: "Dive into beautifully crafted virtual landscapes.",
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
 

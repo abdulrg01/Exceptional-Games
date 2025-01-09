@@ -1,39 +1,7 @@
 import Image from "next/image";
 import { Card } from "./ui/card";
 import Container from "./Container";
-
-const blogPosts = [
-  {
-    id: 1,
-    title: "Bringing Indie Dreams to Life",
-    date: "January 5, 2025",
-    category: "Behind the Scenes",
-    excerpt:
-      "Discover how we collaborated with indie developers to create award-winning games.",
-    image: "/images/blog-1.jpg",
-    link: "/blog/bringing-indie-dreams-to-life",
-  },
-  {
-    id: 2,
-    title: "The Rise of Indie Gaming in 2025",
-    date: "January 3, 2025",
-    category: "Industry Insights",
-    excerpt:
-      "Explore the latest trends and what they mean for players and developers alike.",
-    image: "/images/blog-2.jpg",
-    link: "/blog/indie-gaming-trends-2025",
-  },
-  {
-    id: 3,
-    title: "Our Latest Game: A Journey to Remember",
-    date: "December 20, 2024",
-    category: "Updates",
-    excerpt:
-      "Take a sneak peek into our newest release and what makes it so special.",
-    image: "/images/blog-3.jpg",
-    link: "/blog/journey-to-remember",
-  },
-];
+import { blogPosts } from "@/constant/page";
 
 export default function Blog() {
   return (
